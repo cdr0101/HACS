@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACS Attendance</title>
+    <link rel="stylesheet" href="homepg.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+    <section class="header">
+        <nav>
+        <a href="homepg.html"><h1><img src="images\logo.png" alt="HACS"></h1></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="homepg.html">HOME</a></li>
+                <li><a href="attendance.html">ATTENDANCE</a></li>
+                <li><a href="https://form.jotform.com/230890824636462" target="_blank">LEAVE APPLICATION</a></li>
+                <li><a href="profile.html">PROFILE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+            </ul>
+        </div>
+        <script>
+            window.onscroll=function() {myfunction()};
+            var header=document.getElementById("navLinks");
+            var sticky=header.offsetTop;
+            function myfunction(){
+                if(window.pageYOffset >=sticky){
+                    header.classList.add("sticky")
+                }
+                else{
+                    header.classList.remove("sticky")
+                }
+            }
+            window.addEventListener('scroll',myfunction());
+        </script>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    </section>
+    <section class="sub-header">
+    <h1>ATTENDANCE</h1>
+    </section>
+
+
+    <!--------Course------->
+    <section class="course">
+
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vitae placeat omnis beatae rem, ab recusandae asperiores, 
+                    fuga fugiat ut corrupti mollitia libero voluptatibus, enim amet! Eligendi dolores error esse.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vitae placeat omnis beatae rem, ab recusandae asperiores, 
+                    fuga fugiat ut corrupti mollitia libero voluptatibus, enim amet! Eligendi dolores error esse.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vitae placeat omnis beatae rem, ab recusandae asperiores, 
+                    fuga fugiat ut corrupti mollitia libero voluptatibus, enim amet! Eligendi dolores error esse.</p>
+            </div>
+        </div>
+     </section>
+
+
+   <!------Footer------->
+
+   <!-- <section class="footer">
+    <h3>Thank you for choosing HACS. We look forward to help you out.</h3>
+    <h4>Reach us at: <a href="mailto: hacs.thapar@gmail.com">hacs.thapar@gmail.com</a></h4>
+ </section> -->
+
+ <footer>
+    <p style="font-size:20px;">Thank you for choosing HACS. We look forward to help you out.<br>
+        Reach us at: <a href="mailto: hacs.thapar@gmail.com">hacs.thapar@gmail.com</a></p>
+  </footer>
+<!-- Chatbot Saathi -->
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Saathi"
+  agent-id="090aa5f5-4691-482f-ac53-e4528f76e611"
+  language-code="en"
+></df-messenger>
+
+    <!------Java Script for Menu------>
+    <script>
+
+        var navLinks= document.getElementById("navLinks");
+
+        function showMenu()
+        {
+            navLinks.style.right="0";
+        }
+
+        function hideMenu()
+        {
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

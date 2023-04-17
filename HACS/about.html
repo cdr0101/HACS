@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACS About Us</title>
+    <link rel="stylesheet" href="homepg.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <section class="header">
+        <nav>
+        <a href="homepg.html"><h1><img src="images\logo.png" alt="HACS"></h1></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="homepg.html">HOME</a></li>
+                <li><a href="attendance.html">ATTENDANCE</a></li>
+                <li><a href="https://form.jotform.com/230890824636462" target="_blank">LEAVE APPLICATION</a></li>
+                <li><a href="profile.html">PROFILE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+            </ul>
+        </div>
+        <script>
+            window.onscroll=function() {myfunction()};
+            var header=document.getElementById("navLinks");
+            var sticky=header.offsetTop;
+            function myfunction(){
+                if(window.pageYOffset >=sticky){
+                    header.classList.add("sticky")
+                }
+                else{
+                    header.classList.remove("sticky")
+                }
+            }
+            window.addEventListener('scroll',myfunction());
+        </script>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    </section>
+   <section class="sub-header">    
+    <h1>ABOUT US</h1>
+   </section>
+    
+    <!-------About us content--------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>HACS</h1>
+                <p>We are a team dedicated to provide an efficient and reliable attendance tracking services as well as maintaining hostel records among various other facilities.
+                <br> <br> We understand the importance of maintaining accurate records for the safety and security of our users. We take pride in providing exceptional services and constant support. Our team is always on the line to address your concerns and queries.</p>
+                <a href="homepg.html" class="hero-btn red-btn">HOME</a><br><br><br>
+                <h1>HOSTEL Q</h1>
+                <p>It's a newly constructed hostel with cutting edge housing facilities like 24-hour wifi network, power and water supply. It has internationally recognised food service.
+                <br> <br>The hostel is located among serene and peaceful place surrounded by lush trees,blooming flowers,peacocks and chirping birds.</p>                
+                
+            </div>
+            <div class="about-col">
+                <!-- <img src="images/about.jpg" > -->
+                <!-- hostel video -->
+                <!-- <video width="500px" height="500px" controls="controls">        
+                    <source src="vid.mp4" type="video/mp4">
+                </video> -->
+                <video controls>
+                    <source src="hostel_video.mp4" type="video/mp4"> Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+    <!-------Testimonials-------->
+    <section class="testimonials">
+        <h1>What Students Say</h1>
+        <p>Reviews from some of our HACS website users regarding the website as well as hostel facilities.</p>
+        
+        <div class="testimonial-row">
+            <div class="testimonials-col">                
+                <div class="testimonial-top">
+                    <img src="images/testimonial-d.jpg">
+                    <div class="student-rate">
+                <h3>Drishti Agarwal</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                    </div>
+                </div>
+                <br>
+                <p>The website has clean and modern design with user-friendly interface. The system performed good in terms of providing intended functions about the hostel. Cleaning services are maintained properly and I recommend students to stay in this hostel.</p>                    
+            </div>
+            <div class="testimonials-col">
+                <div class="testimonial-top">
+                    <img src="images/testimonial-s.jpg">
+                    <div class="student-rate">
+                <h3>Shatakshi Saxena</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <br>
+                <p>I appreciate the work done by the developers to maintain this website, the website is well maintained and reliable, navigation is easy. Moreover, the hostel facilities are good and i would recommend this university to other people as well.</p>                    
+            </div>
+            <div class="testimonials-col">
+                <div class="testimonial-top">
+                    <img src="images/testimonial-k.jpg">
+                    <div class="student-rate">
+                <h3>Kashish</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                    </div>
+                </div>
+                <br>
+                <p>HACS is a solid choice for tracking attendance of students, it is user friendly and has extensive review section. The hostel looks nice as well in the videos provided. 
+                    The system was efficient in terms of saving time and efforts.</p>                    
+            </div>
+            <div class="testimonials-col">
+                <div class="testimonial-top">
+                    <img src="images/testimonial-c.jpg">
+
+                    <div class="student-rate">
+                <h3>Chelsi</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                    </div>
+                </div>
+                <br>
+                <p>The website provides insights of the hostel and it has an easy-to-go feature of applying leave without the manual work. The support provided by the team is commendable. Staff and admin make our stay quite easy.
+                </p>                    
+            </div>
+        </div>
+    </section>
+    
+     <!------Footer------->
+
+     <!-- <section class="footer">
+        
+        <h3>Thank you for choosing HACS. We look forward to help you out.</h3>
+        <h4>Reach us at: <a href="mailto: hacs.thapar@gmail.com">hacs.thapar@gmail.com</a></h4>
+     </section> -->
+
+     <footer>
+        <p style="font-size:20px;">Thank you for choosing HACS. We look forward to help you out.<br>
+            Reach us at: <a href="mailto: hacs.thapar@gmail.com">hacs.thapar@gmail.com</a></p>
+      </footer>
+    <!-- Chatbot Saathi -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Saathi"
+      agent-id="090aa5f5-4691-482f-ac53-e4528f76e611"
+      language-code="en"
+    ></df-messenger>
+
+    <!------Java Script for Menu------>
+    <script>
+
+        var navLinks= document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
